@@ -1,0 +1,11 @@
+# NCCL Bitwise Reproducibility Diagnostic Tool
+# Minimum requirements for the PyTorch backend (default)
+
+numpy>=1.21.0
+torch>=1.12.0
+
+# Note: PyTorch must be built with NCCL backend support.
+# Verify with: python -c "import torch.distributed; print(torch.distributed.is_nccl_available())"
+
+# For nccl-tests backend (optional, requires buffer-dump patch):
+#   git clone https://github.com/NVIDIA/nccl-tests && cd nccl-tests && make MPI=1

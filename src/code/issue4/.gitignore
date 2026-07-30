@@ -1,0 +1,8 @@
+# 编译产物
+__pycache__/
+*.pyc
+*.pyo
+
+# 测试输出
+*.json
+.nccl_diag_checkpoint*
